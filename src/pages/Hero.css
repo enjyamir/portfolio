@@ -1,0 +1,82 @@
+.hero {
+    position: relative;
+    min-height: 600px;
+    padding-top: 8rem; 
+    padding-bottom: 6rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .hero__label {
+    color: #FDF0AB;
+    text-align: center;
+    font-weight: 500;
+    font-size: clamp(1.25rem, 2vw, 1.875rem);
+    margin-bottom: .75rem;
+  }
+  
+  .hero__titleWrap {
+    position: relative;
+    margin-bottom: 1rem;
+    height: clamp(7.5rem, 20vw, 15rem);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero__titleBack,
+  .hero__titleFront {
+    position: absolute;
+    text-align: center;
+    font-family: var(--font-display, 'Bebas Neue', Impact, sans-serif);
+    font-weight: 400;
+    line-height: 1;
+    user-select: none;
+    font-size: clamp(3.75rem, 10vw, 10rem);
+    text-shadow: 0 4px 4px rgba(0,0,0,.25);
+  }
+  
+  .hero__titleBack { color: hsl(var(--portfolio-accent)); }
+  
+  .hero__titleFront { 
+    color: #fff; 
+    opacity: 0; 
+    transform: translateY(-8px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .hero--animate .hero__titleFront { 
+    opacity: 1; 
+    transform: translate(4px, 7px);
+  }
+  
+  .hero__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    padding-left: .25rem;
+    padding-right: .25rem;
+    color:  #FDF0AB;
+    font-weight: 500;
+    font-size: clamp(1.125rem, 2vw, 1.875rem);
+  }
+  
+  .hero__tagline {
+    margin-top: 2rem;
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+    font-size: clamp(1.25rem, 3vw, 2.125rem);
+    -webkit-text-stroke: 2px #DD9089;
+    paint-order: stroke fill;
+    text-shadow: 0 4px 4px rgba(0,0,0,.25);
+    padding: 0 .5rem;
+  }
