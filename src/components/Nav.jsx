@@ -11,9 +11,9 @@ const Nav = () => {
 
 <ul className='ullist'>
 
-        <li> Home</li>
+      <Link to = "/Home" > <li> Home</li></Link>  
      <Link to = "/About" > <li>About</li></Link>
-        <li>Project </li>
+        <li>Projects </li>
         <li>Contact </li>
         <li>Blog</li>
 

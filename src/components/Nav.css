@@ -20,9 +20,12 @@ width: 60%;
 padding: 1% 1%;
 border-radius: 20px;
 color: #1E0F18;
+text-decoration: none;
 }
 
-li {  transition: transform 0.5s ease;}
+li {  transition: transform 0.5s ease;
+    list-style-type: none;
+text-decoration: none;}
 
 li:hover {transform: scale(1.1); }
 

@@ -2,6 +2,7 @@
     padding: 5rem 6rem;
     width: 100%;
     background: hsl(var(--portfolio-dark));
+    box-sizing: border-box;
   }
   
   .about__container {

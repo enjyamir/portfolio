@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import './About.css';
 import enjy from '../imgs/gg.png';
 import Skills from '../components/Skills';
-
+import Nav from '../components/Nav';
 
 const About = () => {
     return ( 
 <>
+
+<Nav/>
 <section className="about">
       <div className="about__container">
         <div className="about__underline">
